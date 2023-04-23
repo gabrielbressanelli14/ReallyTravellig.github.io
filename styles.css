@@ -1,3 +1,5 @@
+/* Setting font face for the whole document */
+
 @font-face {
     font-family: 'rampart_oneregular';
     src: url('rampartone-regular-webfont.woff2') format('woff2'),
@@ -7,7 +9,7 @@
 
 }
 
-
+/* Creating responsive css box for images on index page */
 .wrapper{
     display: flex;
     width: 95%;
@@ -16,6 +18,7 @@
 
 }
 
+/* Using the different classes to make each box unique colored */
 .cardB {
     width: 280px;
     height: 360px;
@@ -360,6 +363,9 @@
     align-items: stretch;
 }
 
+
+/* Setting the flexbox and grid */
+
 #titlediv {
     display: grid;
     grid-template-columns: auto;
@@ -396,7 +402,7 @@
 }
 
 
-
+/* Form Style */
 form {
     border: 3px solid white;
     color: burlywood;
@@ -451,7 +457,7 @@ h3{
 }
 
 
-
+/* Giving single settings where needed */
 #Brazil_img{
     width: 650px;
     border: 1px solid #ddd;
@@ -508,6 +514,7 @@ from {
     line-height: 1.3;
 }
 
+/* Styling the topbar */
 .topnav {
     overflow: hidden;
     background-color: white;
@@ -533,6 +540,8 @@ from {
     color: white;
 }
 
+
+/* using media queries to optmize the website for smaller screens */
 @media only screen and (max-width:541px)  {
     #titlediv {
         display: grid;
