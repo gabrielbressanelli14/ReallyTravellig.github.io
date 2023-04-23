@@ -1,0 +1,582 @@
+@font-face {
+    font-family: 'rampart_oneregular';
+    src: url('rampartone-regular-webfont.woff2') format('woff2'),
+         url('rampartone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.wrapper{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    
+
+}
+
+.cardB {
+    width: 280px;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.cardB:hover {
+    transform: translateY(20px);
+}
+
+.cardB:before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(254, 221, 0, 0.5), rgb(0, 151, 57));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.cardB:hover:before {
+    opacity: 1;
+}
+
+.cardB img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.cardB .info{
+    position:relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+
+}
+
+.cardB:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.cardB .info h3{
+    font-family: rampart_oneregular;
+    font-style: normal white;
+    letter-spacing: 1px;
+    font-size: 45px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+
+}
+
+.cardB .info .btn {
+    text-decoration: none;
+    padding: 0.5 rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.cardB .info .btn:hover{
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+
+.cardG {
+    width: 280px;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.cardG:hover {
+    transform: translateY(20px);
+}
+
+.cardG:before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(221, 0, 0, 0.5), rgb(255, 206, 0));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.cardG:hover:before {
+    opacity: 1;
+}
+
+.cardG img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.cardG .info{
+    position:relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+
+}
+
+.cardG:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.cardG .info h3{
+    font-family: rampart_oneregular;
+    font-style: normal white;
+    letter-spacing: 1px;
+    font-size: 45px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+
+}
+
+.cardG .info .btn {
+    text-decoration: none;
+    padding: 0.5 rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.cardG .info .btn:hover{
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+
+.cardE {
+    width: 280px;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.cardE:hover {
+    transform: translateY(20px);
+}
+
+.cardE:before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgb(207, 8, 31));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.cardE:hover:before {
+    opacity: 1;
+}
+
+.cardE img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.cardE .info{
+    position:relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+
+}
+
+.cardE:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.cardE .info h3{
+    font-family: rampart_oneregular;
+    font-style: normal white;
+    letter-spacing: 1px;
+    font-size: 45px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+
+}
+
+.cardE .info .btn {
+    text-decoration: none;
+    padding: 0.5 rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.cardE .info .btn:hover{
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+
+.cardI {
+    width: 280px;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.cardI:hover {
+    transform: translateY(20px);
+}
+
+.cardI:before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(220, 30, 53, 0.5), rgb(2, 82, 156));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.cardI:hover:before {
+    opacity: 1;
+}
+
+.cardI img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.cardI .info{
+    position:relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+
+}
+
+.cardI:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.cardI .info h3{
+    font-family: rampart_oneregular;
+    font-style: normal white;
+    letter-spacing: 1px;
+    font-size: 45px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+
+}
+
+.cardI .info .btn {
+    text-decoration: none;
+    padding: 0.5 rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.cardI .info .btn:hover{
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+
+
+
+#image_div {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    align-items: stretch;
+}
+
+#titlediv {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+#opendiv {
+    display: grid;
+    grid-template-columns: auto;
+    text-align:justify;
+    padding:0px 10px;
+}
+
+#containerdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 50px;
+    padding: 10px 20px;
+}
+
+
+
+
+#conclusiondiv {
+    display: grid;
+    text-align: justify;
+    padding: 0px 10px;
+    
+}
+
+#aboutdiv {
+    padding: 10px;
+}
+
+
+
+form {
+    border: 3px solid white;
+    color: burlywood;
+}
+  
+.container_news_letter {
+    padding: 20px;
+    background-color: white;
+}
+  
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+input[type=checkbox] {
+    margin-top: 16px;
+}
+  
+input[type=submit] {
+    background-color: olivedrab;
+    color: white;
+    border: none;
+}
+  
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+header {
+    font-family: rampart_oneregular;
+}
+
+h1{
+    font-family: rampart_oneregular;
+}
+
+#img {
+    max-width: 100%;
+    order: 2;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+h3{
+    font-family: sans-serif;
+}
+
+
+
+#Brazil_img{
+    width: 650px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+
+body {
+    font-family: sans-serif;
+    background-color:#F5F5DC;
+    
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 3.4rem;
+    color:burlywood
+}
+
+main {
+    
+    font-weight: 300;
+    font-size: 18px;
+    
+}
+
+
+
+#country_title {
+    color:burlywood;
+    font-size: 3rem;
+    text-decoration: none;   
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.ul1 {
+    list-style: none;
+}
+
+from {
+    cursor: pointer;
+}
+
+#open{
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.3;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+}
+  
+.topnav a {
+    align-items:center;
+    float: left;
+    color: burlywood;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: darkkhaki;
+}
+  
+.topnav a.active {
+    background-color: burlywood;
+    color: white;
+}
+
+@media only screen and (max-width:541px)  {
+    #titlediv {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+    }
+    
+    #opendiv {
+        display: grid;
+        grid-template-columns: auto;
+        text-align:justify;
+    }
+    
+    #containerdiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        column-gap: 50px;
+        padding-bottom: 50px;
+        
+    }
+
+    #Brazil_img{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        overflow-x: auto;
+        width: 100%;
+        margin: 10px;
+
+    }
+
+    .wrapper::-webkit-scrollbar {
+        display: none;
+      }
+    .wrapper img {
+        justify-content: space-between;
+        margin-right: 10px;
+      }
+  }
